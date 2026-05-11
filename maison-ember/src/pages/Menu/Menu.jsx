@@ -6,6 +6,7 @@ import Reveal from "../../components/Reveal/Reveal";
 
 import "./Menu.css";
 const img = (fileName) => `${import.meta.env.BASE_URL}img/${fileName}`;
+const imagePath = (fileName) => `${import.meta.env.BASE_URL}img/${fileName}`;
 const categories = [
   { id: "coffee", label: "Coffee" },
   { id: "signature", label: "Signature Drinks" },
