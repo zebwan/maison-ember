@@ -25,6 +25,7 @@ function Footer() {
       <div className="footer-bottom">
         <span>© 2026 Maison Ember</span>
         <span>Crafted for slow coffee moments.</span>
+        <span>Designed and developed by Shazwan.</span>
       </div>
     </footer>
   );

@@ -51,9 +51,14 @@
   border-top: 1px solid rgba(255, 218, 185, 0.16);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   color: rgba(255, 218, 185, 0.55);
   font-size: 0.85rem;
+}
+
+.footer-bottom span:last-child {
+  text-align: right;
 }
 
 @media (max-width: 720px) {
