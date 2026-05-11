@@ -22,16 +22,34 @@ const openingHours = [
 
 const contactDetails = [
   {
-    label: "Address",
-    value: "18, Jalan Ember, Damansara Heights, Kuala Lumpur",
+    label: "Location",
+    value: "Damansara Heights, Kuala Lumpur",
   },
   {
-    label: "Phone",
-    value: "+60 12 408 2218",
+    label: "Reservations",
+    value: "Walk-ins welcome, reservations recommended",
   },
   {
     label: "Email",
     value: "hello@maisonember.co",
+  },
+];
+
+const visitNotes = [
+  {
+    number: "01",
+    title: "Pick your pace",
+    text: "Designed around slow mornings, quiet tables, and soft ambient lighting.",
+  },
+  {
+    number: "02",
+    title: "Order at the counter",
+    text: "A simple counter-first experience for coffee, pastries, and seasonal beans.",
+  },
+  {
+    number: "03",
+    title: "Stay for a while",
+    text: "Warm textures and intimate seating make the space feel calm without feeling empty.",
   },
 ];
 
@@ -76,6 +94,7 @@ function Visit() {
           <Reveal className="visit-ambience-content">
             <p className="section-label">The space</p>
             <h2>Designed for soft light, quiet corners, and slower rituals.</h2>
+
             <p>
               Maison Ember is shaped to feel calm from the moment you arrive.
               Warm textures, intimate seating, gentle lighting, and the smell of
@@ -90,7 +109,10 @@ function Visit() {
           </Reveal>
 
           <Reveal className="visit-ambience-image" delay={0.15}>
-            <img src={`${import.meta.env.BASE_URL}img/interior-corner.png`} alt="Maison Ember interior corner" />
+            <img
+              src={`${import.meta.env.BASE_URL}img/interior-corner.png`}
+              alt="Maison Ember interior corner"
+            />
           </Reveal>
         </div>
       </section>
@@ -127,21 +149,26 @@ function Visit() {
         </div>
       </section>
 
-      <section className="map-section">
-        <div className="section-shell">
-          <Reveal className="map-card">
-            <div className="map-card-content">
-              <p className="section-label">Map placeholder</p>
-              <h2>Maison Ember, Damansara Heights</h2>
-              <p>
-                Replace this area later with an embedded Google Map once the
-                real café address is confirmed.
-              </p>
-            </div>
+      <section className="experience-section">
+        <div className="section-shell experience-grid">
+          <Reveal className="experience-intro">
+            <p className="section-label">The visit ritual</p>
+            <h2>A softer way to spend the day.</h2>
 
-            <div className="map-marker">
-              <span>Maison Ember</span>
-            </div>
+            <p>
+              Settle into a warm corner, choose something slow from the counter,
+              and let the afternoon move at its own pace.
+            </p>
+          </Reveal>
+
+          <Reveal className="experience-cards" delay={0.15}>
+            {visitNotes.map((item) => (
+              <div className="experience-card" key={item.number}>
+                <span>{item.number}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
           </Reveal>
         </div>
       </section>
