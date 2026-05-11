@@ -5,6 +5,8 @@ import Reveal from "../../components/Reveal/Reveal";
 
 import "./Roastery.css";
 
+const img = (fileName) => `${import.meta.env.BASE_URL}img/${fileName}`;
+
 const philosophyItems = [
   {
     title: "Roasted with restraint",

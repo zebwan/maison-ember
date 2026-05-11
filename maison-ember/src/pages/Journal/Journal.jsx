@@ -5,6 +5,8 @@ import Reveal from "../../components/Reveal/Reveal";
 
 import "./Journal.css";
 
+const img = (fileName) => `${import.meta.env.BASE_URL}img/${fileName}`;
+
 const articles = [
   {
     category: "Coffee Rituals",

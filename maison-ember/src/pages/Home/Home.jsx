@@ -6,6 +6,8 @@ import Reveal from "../../components/Reveal/Reveal";
 
 import "./Home.css";
 
+const img = (fileName) => `${import.meta.env.BASE_URL}img/${fileName}`;
+
 const featuredDrinks = [
   {
     name: "Ember Latte",
