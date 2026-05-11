@@ -90,7 +90,7 @@ function Visit() {
           </Reveal>
 
           <Reveal className="visit-ambience-image" delay={0.15}>
-            <img src="/img/interior-corner.png" alt="Maison Ember interior corner" />
+            <img src="/maison-ember/img/interior-corner.png" alt="Maison Ember interior corner" />
           </Reveal>
         </div>
       </section>

@@ -11,19 +11,19 @@ const featuredDrinks = [
     name: "Ember Latte",
     description:
       "A smooth espresso blend with steamed milk, burnt peach notes, and a soft caramel finish.",
-    image: "/img/signature-latte.png",
+    image: img("signature-latte.png"),
   },
   {
     name: "Apricot Cold Cream",
     description:
       "Cold brew layered with apricot cream, vanilla, and a slow-roasted espresso base.",
-    image: "/img/matcha-drink.png",
+    image: img("matcha-drink.png"),
   },
   {
     name: "Cocoa Dusk",
     description:
       "Dark cocoa, double espresso, and a delicate cream top for a deeper afternoon cup.",
-    image: "/img/hero-drink.png",
+    image: img("hero-drink.png"),
   },
 ];
 
@@ -49,19 +49,19 @@ const ritualCards = [
     label: "01",
     title: "Choose the roast",
     text: "Start with the bean profile that fits the mood of your morning.",
-    image: "/img/bean-bag-product.png",
+    image: img("bean-bag-product.png"),
   },
   {
     label: "02",
     title: "Let it bloom",
     text: "Give the coffee time to open, soften, and release its warmth.",
-    image: "/img/barista-pour.png",
+    image: img("barista-pour.png"),
   },
   {
     label: "03",
     title: "Sit with it",
     text: "The Maison Ember ritual is less about rushing and more about noticing.",
-    image: "/img/coffee-table-flatlay.png",
+    image: img("coffee-table-flatlay.png"),
   },
 ];
 
@@ -193,7 +193,7 @@ function Home() {
       <section className="pastry-section">
         <div className="section-shell pastry-grid">
           <Reveal className="pastry-image-wrap">
-<img src="/img/pastry-display.png" alt="Maison Ember artisan pastry" />          </Reveal>
+<img src="/maison-ember/img/pastry-display.png" alt="Maison Ember artisan pastry" />          </Reveal>
 
           <Reveal className="pastry-content" delay={0.15}>
             <p className="section-label">Fresh from the counter</p>
@@ -247,7 +247,7 @@ function Home() {
             </Reveal>
 
             <motion.div className="ritual-image" style={{ y: imageY }}>
-              <img src="/img/hero-cafe.png" alt="Maison Ember café ritual" />
+              <img src="/maison-ember/img/hero-cafe.png" alt="Maison Ember café ritual" />
             </motion.div>
           </div>
 

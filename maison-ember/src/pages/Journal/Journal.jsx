@@ -11,7 +11,7 @@ const articles = [
     title: "The quiet rhythm of a slower morning cup.",
     excerpt:
       "A short note on brewing slowly, choosing the right cup, and letting coffee become part of the morning instead of a task.",
-    image: "/img/coffee-table-flatlay.png",
+    image: img("coffee-table-flatlay.png"),
     date: "12 Feb 2026",
   },
   {
@@ -19,7 +19,7 @@ const articles = [
     title: "Why a good croissant should feel almost weightless.",
     excerpt:
       "Layers, butter, temperature, and the small details that make a pastry feel simple but memorable.",
-    image: "/img/croissant-closeup.png",
+    image: img("croissant-closeup.png"),
     date: "20 Feb 2026",
   },
   {
@@ -27,7 +27,7 @@ const articles = [
     title: "How we approach a softer roast profile.",
     excerpt:
       "Behind the way we roast for warmth, clarity, and a gentler kind of depth.",
-    image: "/img/roasting-process.png",
+    image: img("roasting-process.png"),
     date: "03 Mar 2026",
   },
   {
@@ -35,7 +35,7 @@ const articles = [
     title: "Berry mornings and bright pastry counters.",
     excerpt:
       "A look at the seasonal pastry notes currently shaping our counter selection.",
-    image: "/img/berry-danish.png",
+    image: img("berry-danish.png"),
     date: "18 Mar 2026",
   },
   {
@@ -43,7 +43,7 @@ const articles = [
     title: "Dialling in espresso without overthinking it.",
     excerpt:
       "A simple way to understand balance, texture, and what makes espresso feel complete.",
-    image: "/img/barista-pour.png",
+    image: img("barista-pour.png"),
     date: "29 Mar 2026",
   },
   {
@@ -51,7 +51,7 @@ const articles = [
     title: "Choosing beans for home brewing rituals.",
     excerpt:
       "How to choose between a house blend, a lighter roast, and a deeper espresso profile.",
-    image: "/img/bean-bag-product.png",
+    image: img("bean-bag-product.png"),
     date: "04 Apr 2026",
   },
 ];
@@ -105,7 +105,7 @@ function Journal() {
       <section className="journal-featured">
         <div className="section-shell journal-featured-grid">
           <Reveal className="journal-featured-image">
-            <img src="/img/journal-cover.png" alt="Maison Ember journal cover" />
+            <img src="/maison-ember/img/journal-cover.png" alt="Maison Ember journal cover" />
           </Reveal>
 
           <Reveal className="journal-featured-content" delay={0.15}>

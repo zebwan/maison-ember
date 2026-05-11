@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import Reveal from "../../components/Reveal/Reveal";
 
 import "./Menu.css";
-
+const img = (fileName) => `${import.meta.env.BASE_URL}img/${fileName}`;
 const categories = [
   { id: "coffee", label: "Coffee" },
   { id: "signature", label: "Signature Drinks" },
@@ -19,19 +19,19 @@ const menuItems = {
       name: "House Espresso",
       price: "RM 10",
       description: "Balanced espresso with cocoa depth, soft acidity, and a clean finish.",
-      image: "/img/barista-pour.png",
+      image: img("barista-pour.png"),
     },
     {
       name: "Velvet Americano",
       price: "RM 11",
       description: "Long black with a rounded body, roasted almond notes, and gentle bitterness.",
-      image: "/img/coffee-table-flatlay.png",
+      image: img("coffee-table-flatlay.png"),
     },
     {
       name: "Maison Latte",
       price: "RM 14",
       description: "Silky milk, espresso, and a warm caramel-like finish.",
-      image: "/img/signature-latte.png",
+      image: img("signature-latte.png"),
     },
   ],
 
@@ -40,19 +40,19 @@ const menuItems = {
       name: "Ember Latte",
       price: "RM 16",
       description: "Signature espresso, steamed milk, burnt peach notes, and a soft caramel finish.",
-      image: "/img/signature-latte.png",
+      image: img("signature-latte.png"),
     },
     {
       name: "Apricot Cold Cream",
       price: "RM 18",
       description: "Cold brew layered with apricot cream, vanilla, and a smooth espresso base.",
-      image: "/img/matcha-drink.png",
+      image: img("matcha-drink.png"),
     },
     {
       name: "Cocoa Dusk",
       price: "RM 17",
       description: "Dark cocoa, double espresso, and a delicate cream top for a deeper afternoon cup.",
-      image: "/img/hero-drink.png",
+      image: img("hero-drink.png"),
     },
   ],
 
@@ -61,19 +61,19 @@ const menuItems = {
       name: "Butter Croissant",
       price: "RM 12",
       description: "Flaky, warm, and layered with a clean butter finish.",
-      image: "/img/croissant-closeup.png",
+      image: img("croissant-closeup.png"),
     },
     {
       name: "Berry Danish",
       price: "RM 15",
       description: "Light pastry filled with seasonal berries and soft vanilla cream.",
-      image: "/img/berry-danish.png",
+      image: img("berry-danish.png"),
     },
     {
       name: "Morning Tart",
       price: "RM 16",
       description: "A delicate tart with toasted edges, fruit notes, and soft cream.",
-      image: "/img/hero-pastry.png",
+      image: img("hero-pastry.png"),
     },
   ],
 
@@ -82,19 +82,19 @@ const menuItems = {
       name: "Velvet Origin",
       price: "RM 48",
       description: "Brown sugar, soft citrus, and toasted almond. Suitable for filter and espresso.",
-      image: "/img/bean-bag-product.png",
+      image: img("bean-bag-product.png"),
     },
     {
       name: "Ember House Blend",
       price: "RM 45",
       description: "Chocolate, roasted nuts, and a warm rounded body for everyday brewing.",
-      image: "/img/beans-closeup.png",
+      image: img("beans-closeup.png"),
     },
     {
       name: "Slow Morning Roast",
       price: "RM 52",
       description: "A lighter roast with floral warmth, stone fruit, and a clean finish.",
-      image: "/img/roasting-process.png",
+      image: img("roasting-process.png"),
     },
   ],
 };
@@ -202,7 +202,7 @@ function Menu() {
           </Reveal>
 
           <Reveal className="menu-feature-image" delay={0.15}>
-            <img src="/img/menu-banner.png" alt="Maison Ember seasonal menu" />
+            <img src="/maison-ember/img/menu-banner.png" alt="Maison Ember seasonal menu" />
           </Reveal>
         </div>
       </section>

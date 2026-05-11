@@ -13,7 +13,7 @@
   inset: 0;
   background:
     linear-gradient(135deg, rgba(78, 44, 35, 0.84), rgba(226, 114, 91, 0.26)),
-    url("/img/hero-cafe.png") center/cover no-repeat;
+    url("/maison-ember/img/hero-cafe.png") center/cover no-repeat;
   transform: scale(1.04);
 }
 
@@ -269,7 +269,7 @@
   inset: 0;
   background:
     linear-gradient(135deg, rgba(78, 44, 35, 0.92), rgba(226, 114, 91, 0.32)),
-url("/img/about-roastery.png") center/cover no-repeat;  opacity: 0.92;
+url("/maison-ember/img/about-roastery.png") center/cover no-repeat;  opacity: 0.92;
 }
 
 .roastery-preview-content {

@@ -54,17 +54,17 @@ const beanCards = [
   {
     name: "Velvet Origin",
     notes: "Brown sugar · Soft citrus · Toasted almond",
-    image: "/img/bean-bag-product.png",
+    image: img("bean-bag-product.png"),
   },
   {
     name: "Ember House Blend",
     notes: "Chocolate · Roasted nuts · Rounded body",
-    image: "/img/beans-closeup.png",
+    image: img("beans-closeup.png"),
   },
   {
     name: "Slow Morning Roast",
     notes: "Stone fruit · Floral warmth · Clean finish",
-    image: "/img/roasting-process.png",
+    image: img("roasting-process.png"),
   },
 ];
 
@@ -122,7 +122,7 @@ function Roastery() {
           </Reveal>
 
           <Reveal className="roastery-story-image" delay={0.15}>
-            <img src="/img/about-roastery.png" alt="Maison Ember roastery" />
+            <img src="/maison-ember/img/about-roastery.png" alt="Maison Ember roastery" />
           </Reveal>
         </div>
       </section>
@@ -151,7 +151,7 @@ function Roastery() {
       <section className="origin-section">
         <div className="section-shell origin-grid">
           <Reveal className="origin-image">
-            <img src="/img/coffee-table-flatlay.png" alt="Maison Ember coffee table" />
+            <img src="/maison-ember/img/coffee-table-flatlay.png" alt="Maison Ember coffee table" />
           </Reveal>
 
           <Reveal className="origin-content" delay={0.15}>
