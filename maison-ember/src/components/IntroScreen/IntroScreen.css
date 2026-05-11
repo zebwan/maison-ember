@@ -1,0 +1,57 @@
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--color-espresso);
+}
+
+.intro-panel {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background:
+    radial-gradient(circle at center, rgba(255, 218, 185, 0.12), transparent 26rem),
+    linear-gradient(135deg, rgba(78, 44, 35, 0.98), rgba(226, 114, 91, 0.72)),
+    var(--color-espresso);
+}
+
+.intro-panel-left {
+  left: 0;
+  transform-origin: left center;
+}
+
+.intro-panel-right {
+  right: 0;
+  transform-origin: right center;
+}
+
+.intro-brand {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 4vw, 3.8rem);
+  font-weight: 520;
+  text-transform: uppercase;
+  color: var(--color-soft-apricot);
+  letter-spacing: 0.28em;
+  text-align: center;
+  padding-left: 0.28em;
+}
+
+.intro-grain {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 4px 4px;
+  mix-blend-mode: soft-light;
+}

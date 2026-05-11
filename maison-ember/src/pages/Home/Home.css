@@ -1,0 +1,581 @@
+.home-hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 9rem var(--page-padding) 5rem;
+  overflow: hidden;
+  background: var(--color-espresso);
+}
+
+.home-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(78, 44, 35, 0.84), rgba(226, 114, 91, 0.26)),
+    url("/img/hero-cafe.png") center/cover no-repeat;
+  transform: scale(1.04);
+}
+
+.home-hero-gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 218, 185, 0.28), transparent 26rem),
+    radial-gradient(circle at 88% 78%, rgba(226, 114, 91, 0.28), transparent 28rem),
+    linear-gradient(to bottom, rgba(78, 44, 35, 0.08), rgba(78, 44, 35, 0.72));
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(790px, 100%);
+  color: white;
+}
+
+.home-hero h1 {
+  max-width: 11ch;
+  margin: 1rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(4.5rem, 11vw, 10.5rem);
+  font-weight: 560;
+  line-height: 0.84;
+  letter-spacing: -0.1em;
+}
+
+.home-hero h1 span {
+  display: block;
+  color: var(--color-soft-apricot);
+}
+
+.home-hero-text {
+  max-width: 38rem;
+  margin: 1.65rem 0 0;
+  color: rgba(255, 248, 240, 0.76);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.8;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.2rem;
+}
+
+.home-hero-card {
+  position: absolute;
+  right: var(--page-padding);
+  bottom: 4rem;
+  z-index: 2;
+  width: min(320px, calc(100% - 2.5rem));
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 218, 185, 0.28);
+  border-radius: 1.6rem;
+  background: rgba(255, 248, 240, 0.12);
+  backdrop-filter: blur(18px);
+  color: white;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+}
+
+.home-hero-card span {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: rgba(255, 218, 185, 0.7);
+  font-size: 0.76rem;
+  font-weight: 760;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.home-hero-card strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 620;
+  letter-spacing: -0.05em;
+}
+
+.home-hero-card p {
+  margin: 0.55rem 0 0;
+  color: rgba(255, 248, 240, 0.68);
+  line-height: 1.6;
+}
+
+.home-intro {
+  padding: 8rem 0;
+  background:
+    radial-gradient(circle at top left, rgba(226, 114, 91, 0.18), transparent 30rem),
+    var(--color-cream);
+}
+
+.home-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.home-intro h2,
+.section-heading h2,
+.pastry-content h2,
+.roastery-preview h2,
+.home-cta h2 {
+  margin: 0.8rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 5.5rem);
+  font-weight: 540;
+  line-height: 0.96;
+  letter-spacing: -0.08em;
+  color: var(--color-espresso);
+}
+
+.home-intro p:not(.section-label),
+.pastry-content p,
+.roastery-preview p {
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.9;
+}
+
+.featured-drinks {
+  padding: 7rem 0;
+  background: var(--color-warm-white);
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+
+.drink-card {
+  overflow: hidden;
+  border: 1px solid rgba(78, 44, 35, 0.1);
+  border-radius: 2rem;
+  background: rgba(255, 248, 240, 0.76);
+  box-shadow: 0 24px 70px rgba(78, 44, 35, 0.08);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.drink-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(226, 114, 91, 0.28);
+  box-shadow: 0 30px 90px rgba(78, 44, 35, 0.14);
+}
+
+.drink-card-image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: rgba(255, 218, 185, 0.4);
+}
+
+.drink-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.drink-card:hover .drink-card-image img {
+  transform: scale(1.06);
+}
+
+.drink-card-content {
+  padding: 1.3rem;
+}
+
+.drink-card-content span {
+  color: var(--color-burnt-peach);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.drink-card-content h3 {
+  margin: 0.65rem 0 0.6rem;
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 620;
+  letter-spacing: -0.06em;
+  color: var(--color-espresso);
+}
+
+.drink-card-content p {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.pastry-section {
+  padding: 7rem 0;
+  background:
+    linear-gradient(135deg, rgba(255, 218, 185, 0.55), rgba(255, 248, 240, 1)),
+    var(--color-cream);
+}
+
+.pastry-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.pastry-image-wrap {
+  overflow: hidden;
+  min-height: 560px;
+  border-radius: 2.4rem;
+  background: rgba(78, 44, 35, 0.08);
+  box-shadow: 0 30px 90px rgba(78, 44, 35, 0.13);
+}
+
+.pastry-image-wrap img {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+}
+
+.pastry-content {
+  max-width: 620px;
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 1.5rem;
+  color: var(--color-espresso);
+  font-weight: 800;
+  border-bottom: 1px solid var(--color-burnt-peach);
+  padding-bottom: 0.25rem;
+}
+
+.roastery-preview {
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0;
+  background: var(--color-espresso);
+  color: white;
+}
+
+.roastery-preview-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(78, 44, 35, 0.92), rgba(226, 114, 91, 0.32)),
+url("/img/about-roastery.png") center/cover no-repeat;  opacity: 0.92;
+}
+
+.roastery-preview-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: end;
+}
+
+.roastery-preview h2 {
+  color: white;
+}
+
+.roastery-preview p {
+  color: rgba(255, 248, 240, 0.76);
+}
+
+.roastery-preview .btn {
+  margin-top: 1.5rem;
+}
+.ritual-scroll {
+  position: relative;
+  padding: 8rem 0;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(226, 114, 91, 0.18), transparent 30rem),
+    radial-gradient(circle at 90% 80%, rgba(255, 218, 185, 0.24), transparent 34rem),
+    var(--color-cream);
+}
+
+.ritual-scroll-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.ritual-sticky {
+  position: sticky;
+  top: 7rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.ritual-copy {
+  max-width: 620px;
+}
+
+.ritual-copy h2 {
+  margin: 0.8rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 6vw, 6.5rem);
+  font-weight: 540;
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+  color: var(--color-espresso);
+}
+
+.ritual-copy p:not(.section-label) {
+  margin-top: 1.25rem;
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.9;
+}
+
+.ritual-image {
+  overflow: hidden;
+  height: 460px;
+  border-radius: 2.4rem;
+  background: rgba(78, 44, 35, 0.08);
+  box-shadow: 0 30px 90px rgba(78, 44, 35, 0.13);
+}
+
+.ritual-image img {
+  width: 100%;
+  height: 112%;
+  object-fit: cover;
+}
+
+.ritual-card-stack {
+  min-height: 980px;
+  display: grid;
+  align-content: center;
+  gap: 1.2rem;
+}
+
+.ritual-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  min-height: 260px;
+  border: 1px solid rgba(78, 44, 35, 0.1);
+  border-radius: 2rem;
+  background: rgba(255, 248, 240, 0.86);
+  box-shadow: 0 26px 80px rgba(78, 44, 35, 0.1);
+  will-change: transform;
+}
+
+.ritual-card:nth-child(2) {
+  margin-left: 3rem;
+}
+
+.ritual-card:nth-child(3) {
+  margin-left: 6rem;
+}
+
+.ritual-card-image {
+  overflow: hidden;
+  background: rgba(255, 218, 185, 0.35);
+}
+
+.ritual-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ritual-card-content {
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ritual-card-content span {
+  color: var(--color-burnt-peach);
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.ritual-card-content h3 {
+  margin: 0.7rem 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 560;
+  line-height: 0.96;
+  letter-spacing: -0.08em;
+  color: var(--color-espresso);
+}
+
+.ritual-card-content p {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+.testimonial-section {
+  padding: 7rem 0;
+  background: var(--color-warm-white);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.testimonial-card {
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.4rem;
+  border: 1px solid rgba(78, 44, 35, 0.1);
+  border-radius: 1.8rem;
+  background:
+    radial-gradient(circle at top right, rgba(226, 114, 91, 0.12), transparent 18rem),
+    var(--color-cream);
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: rgba(78, 44, 35, 0.8);
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+
+.testimonial-card span {
+  margin-top: 2rem;
+  color: var(--color-burnt-peach);
+  font-weight: 800;
+}
+
+.home-cta {
+  padding: 7rem 0;
+  background:
+    radial-gradient(circle at center, rgba(255, 218, 185, 0.2), transparent 28rem),
+    var(--color-espresso);
+}
+
+.home-cta-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+}
+
+.home-cta h2 {
+  max-width: 720px;
+  color: white;
+}
+
+.home-cta .section-label {
+  color: var(--color-soft-apricot);
+}
+
+@media (max-width: 980px) {
+  .home-hero-card {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 3rem;
+  }
+
+  .home-intro-grid,
+  .pastry-grid,
+  .roastery-preview-content,
+  .home-cta-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .drink-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-cta-inner {
+    display: grid;
+    align-items: start;
+  }
+    .ritual-scroll-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ritual-sticky {
+    position: relative;
+    top: auto;
+  }
+
+  .ritual-card-stack {
+    min-height: auto;
+  }
+
+  .ritual-card:nth-child(2),
+  .ritual-card:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-hero {
+    min-height: 95vh;
+    padding-top: 8rem;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(3.7rem, 18vw, 6rem);
+  }
+
+  .home-hero-actions {
+    width: 100%;
+  }
+
+  .home-intro,
+  .featured-drinks,
+  .pastry-section,
+  .roastery-preview,
+  .testimonial-section,
+  .home-cta {
+    padding: 5rem 0;
+  }
+
+  .pastry-image-wrap,
+  .pastry-image-wrap img {
+    min-height: 420px;
+  }
+
+  .testimonial-card {
+    min-height: 230px;
+  }
+    .ritual-scroll {
+    padding: 5rem 0;
+  }
+
+  .ritual-image {
+    height: 360px;
+    border-radius: 1.7rem;
+  }
+
+  .ritual-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ritual-card-image {
+    aspect-ratio: 4 / 3;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

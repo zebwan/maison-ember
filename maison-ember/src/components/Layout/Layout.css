@@ -1,0 +1,11 @@
+.site-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(226, 114, 91, 0.18), transparent 32rem),
+    radial-gradient(circle at bottom right, rgba(255, 218, 185, 0.22), transparent 34rem),
+    var(--color-cream);
+}
+
+.site-main {
+  min-height: 100vh;
+}
