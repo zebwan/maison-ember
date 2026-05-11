@@ -7,8 +7,8 @@ import "./styles/global.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+<BrowserRouter basename="/maison-ember">
+  <App />
+</BrowserRouter>
   </React.StrictMode>
 );
